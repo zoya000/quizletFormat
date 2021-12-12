@@ -18,8 +18,12 @@ class QuizletFormatter:
     for i in range(len(self.answers)):
       temp = self.answers[i]
       finished.append(self.definitions[i] + charSepQA + temp)
-      
+
+    returnStr = ""  
     for i in finished:
       print(i)
+      returnStr += i
+    
+    return returnStr
 
 
